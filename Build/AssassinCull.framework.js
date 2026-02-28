@@ -1177,7 +1177,7 @@ function createWasm() {
     // This assertion doesn't hold when emscripten is run in --post-link
     // mode.
     // TODO(sbc): Read INITIAL_MEMORY out of the wasm file in post-link mode.
-    //assert(wasmMemory.buffer.byteLength === 33554432);
+    //assert(wasmMemory.buffer.byteLength === 67108864);
     updateMemoryViews();
 
     wasmTable = Module['asm']['__indirect_function_table'];
@@ -1333,10 +1333,10 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  6308912: () => { Module['emscripten_get_now_backup'] = performance.now; },  
- 6308967: ($0) => { performance.now = function() { return $0; }; },  
- 6309015: ($0) => { performance.now = function() { return $0; }; },  
- 6309063: () => { performance.now = Module['emscripten_get_now_backup']; }
+  6309040: () => { Module['emscripten_get_now_backup'] = performance.now; },  
+ 6309095: ($0) => { performance.now = function() { return $0; }; },  
+ 6309143: ($0) => { performance.now = function() { return $0; }; },  
+ 6309191: () => { performance.now = Module['emscripten_get_now_backup']; }
 };
 
 
