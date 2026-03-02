@@ -1333,10 +1333,10 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  6327184: () => { Module['emscripten_get_now_backup'] = performance.now; },  
- 6327239: ($0) => { performance.now = function() { return $0; }; },  
- 6327287: ($0) => { performance.now = function() { return $0; }; },  
- 6327335: () => { performance.now = Module['emscripten_get_now_backup']; }
+  6327312: () => { Module['emscripten_get_now_backup'] = performance.now; },  
+ 6327367: ($0) => { performance.now = function() { return $0; }; },  
+ 6327415: ($0) => { performance.now = function() { return $0; }; },  
+ 6327463: () => { performance.now = Module['emscripten_get_now_backup']; }
 };
 
 
